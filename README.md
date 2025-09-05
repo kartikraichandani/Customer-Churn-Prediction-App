@@ -1,37 +1,57 @@
-# Customer-Churn-Prediction-App
-This repository contains a Streamlit web application that predicts customer churn using a trained Artificial Neural Network (ANN) model. The model is trained on a dataset of customer information, including demographics, financial details, and service usage.  The app allows users to input customer data and receive a churn probability prediction.
+# Customer Churn Prediction App 📉🤖
 
-## Repository Structure
+This repository hosts a **Streamlit web application** that predicts **customer churn** using a pre-trained **Artificial Neural Network (ANN)** model. The model leverages customer data, including **demographics, financial info, and service usage**, to estimate the likelihood of churn. Users can simply input customer details and get a **churn probability prediction** instantly! ⚡
+
+---
+
+## Repository Structure 📂
+
 customer-churn-prediction/
-├── app.py           # Streamlit web application
-├── model.h5         # Trained ANN model
+├── app.py                  # Streamlit web app
+├── model.h5                # Trained ANN model
 ├── label_encoder_gender.pkl # Saved LabelEncoder
 ├── onehot_encoder_geo.pkl  # Saved OneHotEncoder
-├── scalar.pkl       # Saved StandardScaler
-├── Churn_Modelling.csv # Dataset used for training
-└── README.md        # This file
+├── scalar.pkl              # Saved StandardScaler
+├── Churn_Modelling.csv     # Dataset used for training
+└── README.md               # This file
 
-## Requirements
+---
 
-Includes a `requirements.txt` file in the directory containing the following:
+## Requirements 🛠️
 
-streamlit
-tensorflow
-pandas
-scikit-learn
-numpy
-pickle
+Install the dependencies listed in **requirements.txt**:
 
-## Model Training
+- `streamlit`
+- `tensorflow`
+- `pandas`
+- `scikit-learn`
+- `numpy`
+- `pickle`
 
-The `Churn_Modelling.csv` dataset is used to train the ANN model. The training process involves:
+---
 
-1.  Data preprocessing: Handling categorical features (Gender, Geography) using Label Encoding and One-Hot Encoding, scaling numerical features using StandardScaler.
-2.  Model building: Creating a sequential ANN model with Dense layers and ReLU activation functions.
-3.  Model compilation: Using the Adam optimizer and binary cross-entropy loss function.
-4.  Model training: Training the model on the training data and validating it on the test data.
-5.  Saving the trained model and preprocessing objects (scalers, encoders).
+## Model Training 🏋️‍♂️
 
-## Contributing
+The **Churn_Modelling.csv** dataset is used to train the ANN model. The process includes:
 
-Contributions are welcome! Please open an issue or submit a pull request.
+1. **Data Preprocessing** 🧹  
+   - Handling categorical features (**Gender**, **Geography**) with **Label Encoding** and **One-Hot Encoding**.  
+   - Scaling numerical features using **StandardScaler**.  
+
+2. **Model Building** 🏗️  
+   - Creating a **Sequential ANN** with **Dense layers** and **ReLU activations**.  
+
+3. **Model Compilation** ⚙️  
+   - Using **Adam optimizer** and **binary cross-entropy** loss.  
+
+4. **Model Training** 📊  
+   - Training on the dataset and validating on test data.  
+
+5. **Saving Artifacts** 💾  
+   - Saving the trained **model**, **scalers**, and **encoders** for later use.  
+
+---
+
+## Contributing 🤝
+
+Contributions are always welcome! Feel free to **open an issue** or **submit a pull request**.
